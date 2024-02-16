@@ -1,7 +1,8 @@
 import List from "./List";
-import hero_image from "../assets/hero_image.png";
+import hero_image from "../assets/Object.png";
 import messageCircle from "../assets/message-circle.svg";
 import plus from "../assets/plus.png";
+
 function Hero() {
   return (
     <div className="relative flex flex-col justify-center items-center pt-[80px] pb-[150px] px-[10%] bg-[#F2F7FF] rounded-b-[32px]">
@@ -24,31 +25,11 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="relative flex button-gradient w-[400px] h-[400px] rounded-full">
+        <div className="relative flex flex-1  ">
           <img
             src={hero_image}
             alt=""
-            className="absolute w-full h-full object-cover rounded-b-full"
-          />
-          <img
-            src={plus}
-            alt=""
-            className="absolute object-cover w-[70px] h-[70px] -top-7 left-5 "
-          />
-          <img
-            src={plus}
-            alt=""
-            className="absolute object-cover w-[60px] h-[60px] top-1/2 -left-14"
-          />
-          <img
-            src={plus}
-            alt=""
-            className="absolute object-cover bottom-0 right-12"
-          />
-          <img
-            src={plus}
-            alt=""
-            className="absolute object-cover w-[30px] h-[30px] -right-3 top-16"
+            className=" w-[800px] h-full object-cover"
           />
         </div>
       </div>

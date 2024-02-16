@@ -1,11 +1,12 @@
 import whatsapp from "../assets/whatsapp.svg";
 import doctor_photo from "../assets/doctor_photo.jpeg";
 import ServiceCard from "./ServiceCard";
+import services_image from "../assets/Visual.png";
 import { SERVICES_DATA } from "../utils";
 function Services() {
   return (
     <div className="flex flex-col items-center justify-center gap-[124px] w-full bg-[#F2F7FF] pb-[100px] ">
-      <div className="flex items-center justify-center gap-[124px] w-full h-screen px-[10%]">
+      <div className="flex items-center justify-center gap-[50px] w-full h-screen px-[10%]">
         <div className="flex flex-col gap-[14px] w-1/2  ">
           <p className="text-[22px] text-[#00BFA5] ">services </p>
           <p className="text-[32px] font-medium text-[#031432] ">
@@ -25,9 +26,9 @@ function Services() {
         </div>
         <div className="w-1/2">
           <img
-            src={doctor_photo}
+            src={services_image}
             alt=""
-            className="w-[486px] h-[405px] object-cover rounded-[32px] "
+            className=" object-cover rounded-[32px] "
           />
         </div>
       </div>
