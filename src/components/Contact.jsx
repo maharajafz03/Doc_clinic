@@ -30,11 +30,11 @@ function Contact() {
         <p className="text-[#00BFA5] text-center text-[22px] mb-1 font-[500] ">
           Why Dr. Matthew Anderson?
         </p>
-        <div className="w-full relative">
+        <div className=" relative">
           <img
             src={doctor_contact}
             alt=""
-            className="h-[500px] w-full object-cover rounded-[32px] "
+            className="h-[500px]  object-cover rounded-[32px] "
           />
           <div className="absolute flex items-center justify-center bg-[#1678F2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-[18px] pl-[20px] pr-[16px]  rounded-full cursor-pointer ">
             <img

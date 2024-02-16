@@ -1,9 +1,10 @@
 import { NAV_LINKS } from "../utils";
 import messageCircle from "../assets/message-circle.svg";
 import group3 from "../assets/Group 3.svg";
+import menu_burger from "../assets/mingcute_menu-fill.png";
 function Navbar() {
   return (
-    <nav className="flex items-center justify-around px-auto pt-[25px] bg-[#F2F7FF] rounded-t-[32px]">
+    <nav className="flex items-center justify-around px-auto md:pt-[25px] bg-[#F2F7FF] rounded-t-[32px]">
       <div className="relative text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-bold leading-normal">
         Doctor{" "}
         <div className="absolute  right-0 top-0">
@@ -25,10 +26,11 @@ function Navbar() {
         ))}
       </ul>
 
-      <button className="flex gap-[10px] py-3 px-[28px] button-gradient rounded-full text-[18px] font-medium text-white ">
+      <button className="hidden lg:flex gap-[10px] py-3 px-[28px] button-gradient rounded-full text-[18px] font-medium text-white ">
         <img src={messageCircle} alt="" className="w-[24px] h-[24px] " />{" "}
         <span>Book Now</span>
       </button>
+      <img src={menu_burger} alt="" className="cursor-pointer lg:hidden" />
     </nav>
   );
 }
