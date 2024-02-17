@@ -5,8 +5,8 @@ import services_image from "../assets/Visual.png";
 import { SERVICES_DATA } from "../utils";
 function Services() {
   return (
-    <div className="flex flex-col items-center justify-center gap-[124px] w-full bg-[#F2F7FF] pb-[100px] ">
-      <div className="flex items-center justify-center gap-[50px] w-full md:h-screen px-[10%]">
+    <div className="flex flex-col items-center justify-center gap-[124px] w-full bg-[#F2F7FF] pb-[100px] pt-12 md:pt-0 ">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] w-full md:h-screen px-[10%]">
         <div className="flex flex-col gap-[14px] md:w-1/2  ">
           <p className="text-[22px] text-[#00BFA5] ">services </p>
           <p className="text-[32px] font-medium text-[#031432] ">
@@ -17,14 +17,14 @@ function Services() {
             nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
             nunc elementum.
           </p>
-          <div>
+          <div className="flex justify-center md:justify-start">
             <button className="flex gap-[10px] w-auto py-3 px-[28px] button-gradient rounded-full text-[18px] font-medium text-white ">
               <img src={whatsapp} alt="" className="w-[24px] h-[24px] " />{" "}
               <span>Book an Appoinment</span>
             </button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <img
             src={services_image}
             alt=""

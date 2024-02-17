@@ -5,7 +5,7 @@ import plus from "../assets/plus.png";
 
 function Hero() {
   return (
-    <div className="relative flex flex-col justify-center items-center md:pt-[80px] pb-[150px] px-[5%] md:px-[10%] bg-[#F2F7FF] rounded-b-[32px]">
+    <div className="relative flex flex-col justify-center items-center md:pt-[80px] pb-[50px] md:pb-[150px] px-[5%] md:px-[10%] bg-[#F2F7FF] rounded-b-[32px]">
       <div className="flex flex-col-reverse lg:flex-row  items-center gap-5 md:gap-20">
         <div className="flex flex-col text-center md:text-start  flex-1 gap-[24px] ">
           <p className="text-[#00BFA5] text-[22px] font-[500] ">
@@ -26,10 +26,14 @@ function Hero() {
           </div>
         </div>
         <div className="relative flex flex-1  ">
-          <img src={hero_image} alt="" className="w-full  h-full object-cover" />
+          <img
+            src={hero_image}
+            alt=""
+            className="w-full  h-full object-cover"
+          />
         </div>
       </div>
-      <div className="md:absolute md:w-full md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2">
+      <div className="pt-20 md:pt-0 md:absolute md:w-full md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2">
         <List />
       </div>
     </div>
