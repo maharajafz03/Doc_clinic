@@ -4,8 +4,8 @@ import facebook from "../assets/facebook.svg";
 import whatsapp from "../assets/whatsapp.svg";
 function Footer() {
   return (
-    <div className=" px-[10%] bg-[#1678F2] py-[50px]  ">
-      <div className="flex justify-between py-[50px] border-b border-white">
+    <div className=" px-[10%] bg-[#1678F2]  py-[20px] md:py-[50px]  ">
+      <div className="flex flex-col md:flex-row gap-10 md:justify-between py-[20px] md:py-[50px] border-b border-white">
         <div className="flex flex-col gap-3 w-[300px] ">
           <div className="flex">
             <div className="relative text-[32px] pr-[40px] pt-[9px] t text-white font-bold leading-normal">
@@ -41,7 +41,7 @@ function Footer() {
           </div>
         </div>
         <ul className="flex flex-col gap-3">
-          <li className="font-medium text-[20px] text-white pb-3 ">
+          <li className="font-medium text-[20px] text-white md:pb-3 ">
             Company Info
           </li>
           <li className="font-[300] text-white text-[16px] ">About</li>
@@ -49,11 +49,15 @@ function Footer() {
           <li className="font-[300] text-white text-[16px] ">Blog</li>
         </ul>
         <ul className="flex flex-col gap-3">
-          <li className="font-medium text-[20px] text-white pb-3">Book Now</li>
+          <li className="font-medium text-[20px] text-white md:pb-3">
+            Book Now
+          </li>
           <li className="font-[300] text-white text-[16px] ">Appoinment</li>
         </ul>
         <ul className="flex flex-col gap-3">
-          <li className="font-medium text-[20px] text-white pb-3">Contact</li>
+          <li className="font-medium text-[20px] text-white md:pb-3">
+            Contact
+          </li>
           <li className="font-[300] text-[16px] text-white ">+1 123456789</li>
           <li className="font-[300] text-[16px] text-white ">
             remmcal@mail.com
@@ -63,7 +67,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <p className="text-white text-[16px] text-center pt-10 ">
+      <p className="text-white text-[16px] text-center pt-3 md:pt-10 ">
         © Doctor all rights {new Date().getFullYear()} - Designed by Assaf
       </p>
     </div>

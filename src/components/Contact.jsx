@@ -5,12 +5,12 @@ import List from "./List";
 function Contact() {
   return (
     <div id="contact" className="flex flex-col justify-center bg-[#F9FBFC] ">
-      <div className=" h-screen flex flex-col items-center justify-center">
-        <p className="text-[#00BFA5] text-center text-[22px] mb-1 font-[500] ">
+      <div className=" md:h-screen flex flex-col items-center justify-center">
+        <p className="text-[#00BFA5] py-10 text-center text-[22px] mb-1 font-[500] ">
           Book an appoinment
         </p>
-        <div className=" mx-[10%] flex flex-col justify-center px-[83px] py-[62px]  button-gradient rounded-[32px] ">
-          <p className="text-[27px] font-[600] text-white text-center">
+        <div className=" mx-[10%] flex flex-col justify-center px-[5%] md:px-[83px] py-10 md:py-[62px]  button-gradient rounded-[32px] ">
+          <p className=" text-[24px] md:text-[27px] font-[600] text-white text-center">
             {" "}
             Schedule a virtual or presential appointment today
           </p>
@@ -26,21 +26,21 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-[18px] justify-center items-center mx-[10%] ">
-        <p className="text-[#00BFA5] text-center text-[22px] mb-1 font-[500] ">
+      <div className="flex flex-col gap-[18px] pt-12 md:pt-0 justify-center items-center mx-[10%] ">
+        <p className="text-[#00BFA5] text-center text-[22px]  mb-1 font-[500] ">
           Why Dr. Matthew Anderson?
         </p>
-        <div className=" relative">
+        <div className=" relative w-full">
           <img
             src={doctor_contact}
             alt=""
-            className="h-[500px]  object-cover rounded-[32px] "
+            className="h-[250px] md:h-[500px] w-full  object-cover rounded-[32px] "
           />
           <div className="absolute flex items-center justify-center bg-[#1678F2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-[18px] pl-[20px] pr-[16px]  rounded-full cursor-pointer ">
             <img
               src={play}
               alt=""
-              className="w-[50px] h-[50px] object-cover "
+              className=" size-[30px] md:size-[50px] object-cover "
             />
           </div>
         </div>
