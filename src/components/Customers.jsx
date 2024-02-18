@@ -6,7 +6,7 @@ function Customers() {
   return (
     <div className="flex flex-col py-[100px] gap-10 md:px-[5%] bg-[#F2F7FF] ">
       <div className="flex flex-col gap-5 px-[15%] ">
-        <p className="text-center font-[600] text-[30px] text-[#031432] ">
+        <p className="text-center font-[700] text-[30px] text-[#031432] ">
           What our great customers say about
           <br /> Dr. Matthew Anderson
         </p>

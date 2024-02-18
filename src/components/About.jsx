@@ -24,7 +24,7 @@ function About() {
 
   return (
     <div
-      ref={about}
+      id="about"
       className="flex flex-col md:flex-row items-center justify-center md:gap-[124px] md:w-full pb-[50px] md:pb-0 md:h-screen px-[10%] bg-[#F9FBFC] "
     >
       <div className="md:w-1/2 pb-[30px] md:pb-0 ">
@@ -36,7 +36,7 @@ function About() {
       </div>
       <div className="flex flex-col gap-[30px] md:gap-[14px] md:w-1/2  ">
         <p className="text-[22px] text-[#00BFA5] ">About me </p>
-        <p className="text-[32px] font-medium text-[#031432] ">
+        <p className="text-[32px] font-bold text-[#031432] ">
           A dedicated doctor with the cor mission to help
         </p>
         <p className="text-[16px] text-[#6C87AE] ">

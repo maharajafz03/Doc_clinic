@@ -1,7 +1,7 @@
 function CustomerTestimony({ customer }) {
   return (
     <div className="flex flex-col w-[300px] md:w-[400px] bg-white rounded-[32px] p-[28px] shadow-sm  ">
-      <p className="font-[300] text-[#031432] text-[16px] italic ">
+      <p className="font-[200] text-[#031432] text-[16px] italic ">
         orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore
       </p>

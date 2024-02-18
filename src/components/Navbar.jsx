@@ -2,15 +2,17 @@ import { NAV_LINKS } from "../utils";
 import messageCircle from "../assets/message-circle.svg";
 import group3 from "../assets/Group 3.svg";
 import menu_burger from "../assets/mingcute_menu-fill.png";
-import { useRef } from "react";
-function Navbar() {
-  const about = useRef(null);
-  const services = useRef(null);
-  const contact = useRef(null);
 
-  const scrollToRef = (ref) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+function Navbar() {
+  const scrollToAnchor = (anchorId) => {
+    const anchor = document.getElementById(anchorId);
+    if (anchor) {
+      const offsetTop = anchor.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     }
   };
   return (
@@ -31,7 +33,9 @@ function Navbar() {
             key={index}
             className="text-[16px] text-[#6C87AE] first-of-type:text-[#3A8EF6] hover:text-[#3A8EF6] "
           >
-            <button onClick={() => scrollToRef(item.url)}>{item.link}</button>
+            <button onClick={() => scrollToAnchor(item.url)}>
+              {item.link}
+            </button>
           </li>
         ))}
       </ul>

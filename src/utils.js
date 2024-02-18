@@ -13,7 +13,7 @@ export const NAV_LINKS=
 [
     {
         link:"Home",
-        url:"#home"
+        url:"home"
     },
     {
         link:"About",
@@ -21,11 +21,11 @@ export const NAV_LINKS=
     },
     {
         link:"Services",
-        url:"#services"
+        url:"services"
     },
     {
         link:"Contact",
-        url:"#contact"
+        url:"contact"
     },
 ]
 

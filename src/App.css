@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 body{
     font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .doctor-gradient{
 background: var(--DoctorGradient, linear-gradient(96deg, #3A8EF6 -10.84%, #6F3AFA 196.74%));

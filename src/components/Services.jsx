@@ -13,7 +13,7 @@ function Services() {
       <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] w-full md:h-screen px-[10%]">
         <div className="flex flex-col gap-4 md:gap-[14px] md:w-1/2  ">
           <p className="text-[22px] text-[#00BFA5] ">services </p>
-          <p className="text-[32px] font-medium text-[#031432] ">
+          <p className="text-[32px] font-bold text-[#031432] ">
             Experienced in multiple medical pactices
           </p>
           <p className="text-[16px] text-[#6C87AE] ">

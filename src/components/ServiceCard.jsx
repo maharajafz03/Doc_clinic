@@ -7,7 +7,7 @@ function ServiceCard({ service }) {
         alt=""
         className="w-[200px] h-[200px] object-cover mx-auto"
       />
-      <p className=" text-[24px] font-[500] ">{service.name}</p>
+      <p className=" text-[24px] font-[600] ">{service.name}</p>
       <p className="text-[14px] text-[#6C87AE] ">
         Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
         iTristique id nibh lobortis nunc

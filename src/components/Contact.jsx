@@ -44,7 +44,7 @@ function Contact() {
             />
           </div>
         </div>
-        <p className="text-[30px] font-[600] text-[#031432] ">
+        <p className="text-[30px] font-[700] text-[#031432] ">
           A dedicated doctor with the core mission to help
         </p>
         <p className="text-[16px] text-[#6C87AE] text-center px-4">
