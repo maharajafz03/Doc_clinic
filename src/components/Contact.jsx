@@ -54,7 +54,7 @@ function Contact() {
           lobortis. Vulputate tortor tincidun.
         </p>
       </div>
-      <div className="pt-[60px] pb-[100px] ">
+      <div className="pt-[60px] pb-[100px] px-[10%] ">
         <List />
       </div>
     </div>

@@ -2,12 +2,15 @@ import whatsapp from "../assets/whatsapp.svg";
 import doctor_photo from "../assets/doctor_photo.jpeg";
 function About() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center md:gap-[124px] md:w-full pb-[50px] md:pb-0 md:h-screen px-[10%] bg-[#F9FBFC] ">
+    <div
+      id="about"
+      className="flex flex-col md:flex-row items-center justify-center md:gap-[124px] md:w-full pb-[50px] md:pb-0 md:h-screen px-[10%] bg-[#F9FBFC] "
+    >
       <div className="md:w-1/2 pb-[30px] md:pb-0 ">
         <img
           src={doctor_photo}
           alt=""
-          className="w-[486px] h-[405px] object-cover rounded-[32px] "
+          className="w-[486px] h-[300px] md:h-[405px] object-cover rounded-[32px] "
         />
       </div>
       <div className="flex flex-col gap-[30px] md:gap-[14px] md:w-1/2  ">

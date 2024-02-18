@@ -1,7 +1,7 @@
 import whatsapp from "../assets/whatsapp.svg";
 function ServiceCard({ service }) {
   return (
-    <div className="flex flex-col gap-[10px]    w-[320px] p-[32px] bg-white rounded-[24px] shadow-sm ">
+    <div className="flex flex-col gap-[10px]   w-[300px] md:w-[320px] p-[25px] md:p-[32px] bg-white rounded-[24px] shadow-sm ">
       <img
         src={service.picture}
         alt=""

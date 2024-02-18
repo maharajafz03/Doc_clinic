@@ -3,9 +3,13 @@ import doctor_photo from "../assets/doctor_photo.jpeg";
 import ServiceCard from "./ServiceCard";
 import services_image from "../assets/Visual.png";
 import { SERVICES_DATA } from "../utils";
+import Carousel from "./Carousel";
 function Services() {
   return (
-    <div className="flex flex-col items-center justify-center gap-[124px] w-full bg-[#F2F7FF] pb-[100px] pt-16 md:pt-0 ">
+    <div
+      id="services"
+      className="flex flex-col items-center justify-center gap-[124px] w-full bg-[#F2F7FF] pb-[100px] pt-16 md:pt-0 "
+    >
       <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] w-full md:h-screen px-[10%]">
         <div className="flex flex-col gap-4 md:gap-[14px] md:w-1/2  ">
           <p className="text-[22px] text-[#00BFA5] ">services </p>
@@ -32,11 +36,17 @@ function Services() {
           />
         </div>
       </div>
-      <div className="w-full flex gap-[36px] flex-wrap items-center justify-center px-[5%] ">
+      <div className="w-full hidden  md:flex gap-[36px] flex-wrap items-center justify-center px-[5%] ">
         {SERVICES_DATA.map((item, index) => (
           <ServiceCard key={index} service={item} />
         ))}
       </div>
+      <Carousel
+        data={SERVICES_DATA.map((item, index) => (
+          <ServiceCard key={index} service={item} />
+        ))}
+        lastIndex={5}
+      />
     </div>
   );
 }
