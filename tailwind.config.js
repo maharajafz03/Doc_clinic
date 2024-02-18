@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
     
         'poppins': ["Poppins"],
+        'sora':["Sora"]
       },
     }
 

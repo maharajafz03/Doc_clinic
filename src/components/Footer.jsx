@@ -8,7 +8,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row gap-10 md:justify-between py-[20px] md:py-[50px] border-b border-white">
         <div className="flex flex-col gap-3 w-[300px] ">
           <div className="flex">
-            <div className="relative text-[32px] pr-[40px] pt-[9px] t text-white font-bold leading-normal">
+            <div className="relative text-[32px] pr-[40px] pt-[9px] t text-white font-sora font-bold leading-normal">
               Doctor{" "}
               <div className="absolute  right-0 top-0">
                 <img

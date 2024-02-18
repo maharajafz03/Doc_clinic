@@ -6,7 +6,7 @@ import { useState } from "react";
 import classNames from "classnames";
 
 function Navbar() {
-  const [showMobileNav, setShowMobilenav] = useState(true);
+  const [showMobileNav, setShowMobilenav] = useState(false);
 
   const toogleMobileNav = () => {
     setShowMobilenav(!showMobileNav);
@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <nav className="relative flex items-center justify-around px-auto md:pt-[25px] bg-[#F2F7FF] overflow-hidden ">
-      <div className="relative text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-bold leading-normal">
+      <div className="relative font-sora text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-[600] leading-normal">
         Doctor{" "}
         <div className="absolute  right-0 top-0">
           <img
@@ -52,12 +52,12 @@ function Navbar() {
         <img src={messageCircle} alt="" className="w-[24px] h-[24px] " />{" "}
         <span>Book Now</span>
       </button>
-      <img
-        src={menu_burger}
+      <span
         onClick={toogleMobileNav}
-        alt=""
-        className="cursor-pointer md:hidden"
-      />
+        className="material-icons cursor-pointer md:hidden hover:bg-blue-100 rounded-full text-[30px] text-[#3A8EF6]  p-1"
+      >
+        menu
+      </span>
       {/* Moobile nav */}
       <ul
         className={classNames(
