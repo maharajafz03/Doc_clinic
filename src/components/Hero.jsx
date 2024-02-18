@@ -33,7 +33,7 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="pt-20 md:pt-0 md:absolute md:w-full md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2">
+      <div className="pt-20 md:pt-0 md:absolute z-10 md:w-full md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2">
         <List />
       </div>
     </div>

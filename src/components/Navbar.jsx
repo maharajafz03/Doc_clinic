@@ -2,8 +2,15 @@ import { NAV_LINKS } from "../utils";
 import messageCircle from "../assets/message-circle.svg";
 import group3 from "../assets/Group 3.svg";
 import menu_burger from "../assets/mingcute_menu-fill.png";
+import { useState } from "react";
+import classNames from "classnames";
 
 function Navbar() {
+  const [showMobileNav, setShowMobilenav] = useState(true);
+
+  const toogleMobileNav = () => {
+    setShowMobilenav(!showMobileNav);
+  };
   const scrollToAnchor = (anchorId) => {
     const anchor = document.getElementById(anchorId);
     if (anchor) {
@@ -15,8 +22,9 @@ function Navbar() {
       });
     }
   };
+
   return (
-    <nav className="flex items-center justify-around px-auto md:pt-[25px] bg-[#F2F7FF] rounded-t-[32px]">
+    <nav className="relative flex items-center justify-around px-auto md:pt-[25px] bg-[#F2F7FF] overflow-hidden ">
       <div className="relative text-[32px] pr-[40px] pt-[9px] doctor-gradient text-transparent font-bold leading-normal">
         Doctor{" "}
         <div className="absolute  right-0 top-0">
@@ -44,7 +52,38 @@ function Navbar() {
         <img src={messageCircle} alt="" className="w-[24px] h-[24px] " />{" "}
         <span>Book Now</span>
       </button>
-      <img src={menu_burger} alt="" className="cursor-pointer hidden" />
+      <img
+        src={menu_burger}
+        onClick={toogleMobileNav}
+        alt=""
+        className="cursor-pointer md:hidden"
+      />
+      {/* Moobile nav */}
+      <ul
+        className={classNames(
+          showMobileNav ? "right-0" : "-right-[100vw]",
+          "md:hidden fixed duration-500 ease-in-out top-0 z-[200] flex flex-col items-center justify-center gap-[50px] h-full w-screen bg-[#3A8EF6] text-white ",
+        )}
+      >
+        {NAV_LINKS.map((item, index) => (
+          <li key={index} className="text-[22px]   hover:text-gray-300 ">
+            <button
+              onClick={() => {
+                scrollToAnchor(item.url);
+                toogleMobileNav();
+              }}
+            >
+              {item.link}
+            </button>
+          </li>
+        ))}
+        <span
+          onClick={toogleMobileNav}
+          className="absolute top-8 right-9 material-icons flex justify-center items-center p-2 bg-white text-[#3A8EF6] rounded-full cursor-pointer"
+        >
+          close
+        </span>
+      </ul>
     </nav>
   );
 }

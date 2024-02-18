@@ -19,7 +19,7 @@ function Contact() {
             egestas viverra turpis habitant eu sociis fermentum felis.
           </p>
           <div className="flex justify-center">
-            <button className="flex gap-[6px] w-auto mt-10 py-3 px-[28px] bg-white rounded-full text-[18px] font-medium text-white ">
+            <button className="flex gap-[6px] w-auto mt-10 py-3 px-[15px] md:px-[28px] bg-white rounded-full text-[18px] font-medium text-white ">
               <img src={whatsapp_blue} alt="" className="w-[24px] h-[24px] " />{" "}
               <span className="text-[#3A8EF6] ">Book an Appoinment</span>
             </button>
@@ -44,14 +44,12 @@ function Contact() {
             />
           </div>
         </div>
-        <p className="text-[30px] font-[700] text-[#031432] ">
+        <p className="text-[22px] md:text-[30px] text-center font-[600] text-[#031432] ">
           A dedicated doctor with the core mission to help
         </p>
-        <p className="text-[16px] text-[#6C87AE] text-center px-4">
+        <p className="text-[16px] text-[#6C87AE] text-center md:px-4">
           orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
-          nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc
-          elementum. Tellus quam mauris aenean turpis vulputate sodales nullam
-          lobortis. Vulputate tortor tincidun.
+          nibh cursus at sed sagittis amet, sed.
         </p>
       </div>
       <div className="pt-[60px] pb-[100px] px-[10%] ">

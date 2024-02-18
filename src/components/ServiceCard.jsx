@@ -12,7 +12,7 @@ function ServiceCard({ service }) {
         Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
         iTristique id nibh lobortis nunc
       </p>
-      <button className="flex gap-[6px] w-full py-3 px-[28px] button-gradient rounded-full text-[16px] font-medium text-white ">
+      <button className="flex gap-[6px] w-full py-3 px-[15px] md:px-[28px] button-gradient rounded-full text-[16px] font-medium text-white ">
         <img src={whatsapp} alt="" className="w-[24px] h-[24px] " />{" "}
         <span>Book an Appoinment</span>
       </button>
