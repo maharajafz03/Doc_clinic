@@ -17,7 +17,7 @@ export const NAV_LINKS=
     },
     {
         link:"About",
-        url:"#about"
+        url:"about"
     },
     {
         link:"Services",

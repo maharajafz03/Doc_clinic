@@ -1,9 +1,30 @@
 import whatsapp from "../assets/whatsapp.svg";
 import doctor_photo from "../assets/doctor_photo.jpeg";
+import { useRef, useState } from "react";
+import classNames from "classnames";
 function About() {
+  const about = useRef(null);
+  const [scrollTop, setScrollTop] = useState(false);
+
+  const handleScrollTop = () => {
+    if (window.scrollY > window.innerHeight) {
+      setScrollTop(true);
+    } else {
+      setScrollTop(false);
+    }
+  };
+  window.addEventListener("scroll", handleScrollTop);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div
-      id="about"
+      ref={about}
       className="flex flex-col md:flex-row items-center justify-center md:gap-[124px] md:w-full pb-[50px] md:pb-0 md:h-screen px-[10%] bg-[#F9FBFC] "
     >
       <div className="md:w-1/2 pb-[30px] md:pb-0 ">
@@ -31,6 +52,16 @@ function About() {
           </button>
         </div>
       </div>
+      {scrollTop && (
+        <div
+          onClick={scrollToTop}
+          className={classNames(
+            " fixed  bottom-5 right-5 animate-bounce hover:animate-none flex items-center justify-center rounded-full shadow-xl p-3 md:p-4 cursor-pointer bg-white hover:bg-gray-100",
+          )}
+        >
+          <span className="material-icons text-blue-500">north</span>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import { useRef } from "react";
 function Home() {
+  const home = useRef(null);
   return (
     <div
       id="home"
